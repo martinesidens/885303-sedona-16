@@ -6,115 +6,113 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="header-menu">
-        <button class="main-nav__close" type="button"></button>
-        <div class="main-nav-wrapper">
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
+      <nav class="main-header__menu">
+        <button class="main-header__close" type="button"></button>
+        <div class="main-header__wrapper">
+          <ul class="main-header__list">
+            <li class="main-header__item">
               <a href="#">Главная</a>
             </li>
-            <li class="header-menu-item">
+            <li class="main-header__item">
               <a href="#">Фото и видео</a>
             </li>
-            <li class="header-menu-item" >
+            <li class="main-header__item" >
               <a href="#">Форма вызова</a>
             </li>
-            <li class="header-menu-item">
-              <a href="">HTML Academy</a>
+            <li class="main-header__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
-        <button class="main-nav__toggle" type="button"></button>
+        <button class="main-header__toggle" type="button"></button>
       </nav>
       <div class="wrapper">
-        <a href="#" class="header-logo">
-          <img class="header-logo-img"  src="img/logotyle-mobile.svg" alt="Логотип">
+        <a href="#" class="main-header__logo">
+          <img class="main-header__logo-img"  src="img/logotyle-mobile.svg" alt="Логотип">
         </a>
-        <img class="header-text" src="img/text-index.png" alt="Sedona">
+        <img class="main-header__text" src="img/text-index.svg" alt="Sedona">
       </div>
     </header>
     <main>
       <section class="advantages">
         <div class="wrapper">
-          <div class="advantages__title">
-            <img class="triangle__title" src="img/intro-triangle.svg" alt="">
-            <h1 class="advantages__title__headline">
+          <div class="advantages__item advantages__item--triangle-up">
+            <h1 class="advantages__title">
               СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
             </h1>
             <p class="advantages__description">
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
             </p>
-            <img class="triangle__title reverse" src="img/intro-triangle-rev.svg" alt="">
           </div>
         </div>
-        <div class="advantages__first">
+        <div class="advantages__item advantages__item--blue advantages__item--triangle-down">
           <div class="wrapper">
-            <h2 class="advantages__title__headline white">
+            <h2 class="advantages__title advantages__title--white">
               Настоящий городок
             </h2>
-            <p class="advantages__description white">
+            <p class="advantages__number advantages__number--white">
               - №1 -
             </p>
-            <p class="advantages__description white">
+            <p class="advantages__description advantages__description--white">
               СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
             </p>
           </div>
           <p class="advantages__img">
-            <img class="sedona__foto" src="img/photo-city.jpeg" alt="Фото Седоны">
+            <img src="img/photo-city.jpeg" alt="Фото Седоны">
           </p>
         </div>
-        <div class="advantages__facilities">
+        <div class="facilities">
           <div class="wrapper">
-            <ul class="advantages__facilities__list">
-              <li class="advantages__facilities__list__item">
-                <h3 class="advantages__title__headline">
+            <ul class="facilities__list">
+              <li class="facilities__list-item">
+                <h3 class="facilities__title">
                   Жилье
                 </h3>
-                <p class="advantages__description">
+                <p class="facilities__description">
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
-              <li class="advantages__facilities__list__item">
-                <h3 class="advantages__title__headline">
+              <li class="facilities__list-item">
+                <h3 class="facilities__title">
                   Сувениры
                 </h3>
-                <p class="advantages__description">
+                <p class="facilities__description">
                   Не только китайского, но и местного производства!
                 </p>
               </li>
-              <li class="advantages__facilities__list__item">
-                <h3 class="advantages__title__headline">
+              <li class="facilities__list__item">
+                <h3 class="facilities__title">
                   Еда
                 </h3>
-                <p class="advantages__description">
+                <p class="facilities__description">
                   Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
                 </p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="advantages__second">
+        <div class="advantages__item advantages__item--blue">
           <div class="wrapper">
-            <h2 class="advantages__title__headline white">
+            <h2 class="advantages__title advantages__title--white">
               Там есть мост дьявола
             </h2>
-            <p class="advantages__description white">
+            <p class="advantages__number advantages__number--white">
               - №2 -
             </p>
-            <p class="advantages__description white">
+            <p class="advantages__description advantages__description--white">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
           <p class="advantages__img">
-            <img class="sedona__foto" src="img/photo-bridge.jpeg" alt="Фото моста">
+            <img src="img/photo-bridge.jpeg" alt="Фото моста">
           </p>
         </div>
-        <div class="advantages__third">
+        <div class="advantages__item">
           <div class="wrapper">
-            <h2 class="advantages__title__headline">
+            <h2 class="advantages__title">
               Небольшая площадь
             </h2>
-            <p class="advantages__description">
+            <p class="advantages__number">
               - №3 -
             </p>
             <p class="advantages__description">
@@ -122,12 +120,12 @@
             </p>
           </div>
         </div>
-        <div class="advantages__fourth">
+        <div class="advantages__item">
           <div class="wrapper">
-            <h2 class="advantages__title__headline">
+            <h2 class="advantages__title">
               Красивая дорога
             </h2>
-            <p class="advantages__description">
+            <p class="advantages__number">
               - №4 -
             </p>
             <p class="advantages__description">
@@ -135,12 +133,12 @@
             </p>
           </div>
         </div>
-        <div class="advantages__fifth">
+        <div class="advantages__item">
           <div class="wrapper">
-            <h2 class="advantages__title__headline">
+            <h2 class="advantages__title">
               Мало туристов
             </h2>
-            <p class="advantages__description">
+            <p class="advantages__number">
               - №5 -
             </p>
             <p class="advantages__description">
@@ -156,23 +154,23 @@
             #visitSEDONA
           </p>
           <ul class="footer__social">
-            <li class="footer__social__item">
-            <a class="social__link" href="https://twitter.com/?lang=ru">
+            <li class="footer__social-item">
+            <a class="footer__social-link" href="https://twitter.com/?lang=ru">
               Twitter
             </a>
           </li>
-          <li class="footer__social__item">
-            <a class="social__link" href="https://ru-ru.facebook.com/">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://ru-ru.facebook.com/">
               Facebook
             </a>
           </li>
-          <li class="footer__social__item">
-            <a class="social__link" href="https://ru-ru.facebook.com/">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://ru-ru.facebook.com/">
               YouTube
             </a>
           </li>
         </ul>
-        <a class="copyright__link" href="https://htmlacademy.ru/">
+        <a class="footer__copyright" href="https://htmlacademy.ru/">
           Разработано
         </a>
       </div>
