@@ -1,0 +1,60 @@
+.facilities {
+  .white_block();
+}
+
+.facilities__list {
+  padding: 0;
+  margin: 0;
+}
+
+.facilities__list-item { 
+  list-style: none;
+}
+
+.facilities__title {
+  position: relative;
+  .bold_type();
+  .title_type();
+  text-align: left;
+  padding-left: 50px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.facilities__description {
+  .normal_type();
+  .description_type();
+  text-align: left;
+  padding-left: 50px;
+  margin-bottom: 28px;
+}
+
+.facilities__title--first::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: url(../../img/icon-house.svg) no-repeat;
+    left: 0;
+    top: -12px;
+}
+
+.facilities__title--second::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: url(../../img/icon-gift.svg) no-repeat;
+    left: 0;
+    top: -12px; 
+}
+
+.facilities__title--third::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: url(../../img/icon-burger.svg) no-repeat;
+    left: 0;
+    top: -12px; 
+}

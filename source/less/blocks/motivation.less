@@ -1,0 +1,75 @@
+.motivation {
+  .white_block();
+  border-bottom: #b2b2b2b2 solid 2px;
+}
+
+.motivation__title {
+    position: relative;
+  .bold_type();
+  .title_type();
+  margin-bottom: 27px;
+}
+
+.motivation__description {
+  .normal_type();
+  .description_type();
+    margin-bottom: 28px;
+}
+
+.photo__name {
+  .bold_type(); 
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.photo__author{
+  margin-bottom: 10px;
+}
+
+.photo__item {
+  margin-top: 22px;
+  margin-bottom: 15px;
+  border-bottom: #b2b2b2b2 solid 2px;
+}
+
+.photo__counter {
+  .bold_type();
+  position: relative;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 38px;
+  margin-bottom: 18px;
+}
+
+.photo__counter::before {
+  content: "";
+  position: absolute;
+  background: url(../../img/icon-like.svg) no-repeat;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+  left: -35px;
+  top: 0;
+}
+
+.video {
+  width: 320px;
+}
+
+.footer__hashtag--photo {  
+  margin-top: 74px;
+}
+
+.motivation__title::before {
+  content: "";
+  position: absolute;
+  background: url(../../img/bg-intro-triangle-mobile.svg) no-repeat;
+  width: 320px;
+  height: 30px;
+  margin-top: -70px;
+  z-index: 2;
+  left: -20px;
+  top: 4px;
+}

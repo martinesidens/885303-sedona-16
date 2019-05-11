@@ -8,58 +8,65 @@
   <body>
     <header class="main-header">
       <nav class="main-header__menu">
-        <button class="main-header__close" type="button"></button>
         <div class="main-header__wrapper">
           <ul class="main-header__list">
             <li class="main-header__item">
-              <a href="#">Главная</a>
+              <a class="main-header__link" href="index.html">Главная</a>
+              <button class="main-header__close" type="button"></button>
             </li>
             <li class="main-header__item">
-              <a href="#">Фото и видео</a>
+              <a class="main-header__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-header__item" >
-              <a href="#">Форма вызова</a>
+              <a class="main-header__link" href="form.html">Форма вызова</a>
             </li>
             <li class="main-header__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+              <a class="main-header__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
+          <div class="main-header-logo">
+            <a href="#" class="main-header-logo__link">
+              <img class="main-header__logo-img"  src="img/logo-sedona-mobile.svg" alt="Логотип">
+            </a>
+            <button class="main-header__toggle" type="button"></button>
+          </div>
         </div>
-        <button class="main-header__toggle" type="button"></button>
       </nav>
-      <div class="wrapper">
-        <a href="#" class="main-header__logo">
-          <img class="main-header__logo-img"  src="img/logotyle-mobile.svg" alt="Логотип">
-        </a>
-          <img class="main-header__text" src="img/SEDONA.svg" alt="Sedona">
+      <div class="main-header__img main-header__img--low">
+        <img class="main-header__text" src="img/text-sedona.svg" alt="Sedona">
       </div>
     </header>
     <footer class="footer">
+      <div class="wrapper">
       <div class="wrapper__footer">
         <p class="footer__hashtag">
           #visitSEDONA
         </p>
         <ul class="footer__social">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="https://twitter.com/?lang=ru">
-              Twitter
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://ru-ru.facebook.com/">
-              Facebook
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://ru-ru.facebook.com/">
-              YouTube
-            </a>
-          </li>
-        </ul>
-          <a class="footer__copyright" href="https://htmlacademy.ru/">
-            Разработано
+           <a class="footer__social-link" href="https://twitter.com/?lang=ru">
+            <span class="visually-hidden">Twitter</span>
+            <img class="footer__social-img" src="img/icon-twitter.svg">
+           </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://ru-ru.facebook.com/">
+            <span class="visually-hidden">Facebook</span>
+            <img class="footer__social-img" src="img/icon-facebook.svg">
           </a>
-      </div>
-    </footer>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://www.youtube.com/?gl=RU&hl=ru">
+            <span class="visually-hidden">Youtube</span>
+            <img class="footer__social-img" src="img/icon-youtube.svg">
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright" href="https://htmlacademy.ru/">
+        Разработано
+      </a>
+    </div>
+  </div>
+  </footer>
   </body>
 </html>
