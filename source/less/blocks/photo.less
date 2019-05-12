@@ -1,0 +1,33 @@
+.photo__name {
+  .font_type(@bold-type); 
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+  
+.photo__author{
+  margin-bottom: 10px;
+}
+  
+.photo__item {
+  margin-top: 22px;
+  margin-bottom: 15px;
+  border-bottom: #b2b2b2b2 solid 2px;
+}
+  
+.photo__counter {
+  .font_type(@bold-type);
+  .text_type(14px; 24px; left; 8px; 18px);
+  position: relative;
+  margin-left: 38px;
+}
+  
+.photo__counter::before {
+  content: "";
+  .size(22px; 22px);
+  position: absolute;
+  background: url(../../img/icon-like.svg) no-repeat;
+  z-index: 2;
+  left: -35px;
+  top: 0;
+}

@@ -1,39 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:700&subset=cyrillic');
-@import "blocks/main-header.less";
+@import "variable.less";
+@import "mixins.less";
+@import "global.less";
 @import "normalize.less";
-@import "global-variable.less";
 @import "blocks/advantages.less";
 @import "blocks/footer.less";
 @import "blocks/facilities.less";
 @import "blocks/motivation.less";
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.wrapper {
-  width: 280px;
-  margin: 0 20px;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+@import "blocks/photo.less";
+@import "blocks/video.less";
+@import "blocks/main-header.less";

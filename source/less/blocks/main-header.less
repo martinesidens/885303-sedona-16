@@ -1,11 +1,9 @@
 .main-header__list {
-  .blue_block();
-  display: flex;
-  flex-direction: column;
+  .wrapper;
+  .block_type(@blue-color; @white-color);
+  .null-p-m;
   justify-content: center;
   width: 320px;
-  padding: 0;
-  margin: 0;
 }
 
 .main-header__item {
@@ -19,10 +17,9 @@
 }
 
 .main-header__link {
+  .font_type(@bold-type);
   position: relative;
-  font-family: "PTSans", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700px;
+  font-size: 18px;
   line-height: 40px;
   padding: 10px 0;
   text-decoration: none;
@@ -31,20 +28,18 @@
 }
 
 .main-header__close {
+  .size(25px; 25px);
   position: absolute;
   background: url(../../img/icon-cross.svg) no-repeat;
-  width: 25px;
-  height: 25px;
   right: 20px;
   top: 20px;
   border: 0;
 }
 
 .main-header__toggle {
+  .size(25px; 25px);
   position: absolute;
   background: url(../../img/icon-menu.svg) no-repeat;
-  width: 25px;
-  height: 25px;
   right: 20px;
   top: 20px;
   border: 0;
@@ -77,3 +72,4 @@
   background-position: bottom;
   width: 320px;
 }
+

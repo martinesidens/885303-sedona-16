@@ -1,5 +1,5 @@
 .facilities {
-  .white_block();
+  .block_type(@white-color; @black-color);
 }
 
 .facilities__list {
@@ -13,27 +13,21 @@
 
 .facilities__title {
   position: relative;
-  .bold_type();
-  .title_type();
-  text-align: left;
+  .font_type(@bold-type);
+  .text_type(18px; 24px; left; 35px; 15px);
   padding-left: 50px;
-  margin-top: 35px;
-  margin-bottom: 15px;
 }
 
 .facilities__description {
-  .normal_type();
-  .description_type();
-  text-align: left;
+  .font_type(@normal-type);
+  .text_type(14px; 21px; left; 15px; 28px);
   padding-left: 50px;
-  margin-bottom: 28px;
 }
 
 .facilities__title--first::before {
     content: "";
+    .size(39px; 39px);
     position: absolute;
-    width: 39px;
-    height: 39px;
     background: url(../../img/icon-house.svg) no-repeat;
     left: 0;
     top: -12px;
@@ -41,9 +35,8 @@
 
 .facilities__title--second::before {
     content: "";
+    .size(39px; 39px);
     position: absolute;
-    width: 39px;
-    height: 39px;
     background: url(../../img/icon-gift.svg) no-repeat;
     left: 0;
     top: -12px; 
@@ -51,9 +44,8 @@
 
 .facilities__title--third::before {
     content: "";
+    .size(39px; 39px);
     position: absolute;
-    width: 39px;
-    height: 39px;
     background: url(../../img/icon-burger.svg) no-repeat;
     left: 0;
     top: -12px; 
