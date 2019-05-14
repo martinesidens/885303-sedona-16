@@ -1,4 +1,5 @@
 .advantages__item {
+  .wrapper;
   .block_type(@white-color; @black-color);
   position: relative;
   width: 320px;
@@ -63,4 +64,23 @@
   left: -1px;
   top: -27px;
   background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item--triangle-up::before {
+    background: url(../../img/bg-intro-triangle-tablet.svg) no-repeat;
+    .size(768px; 57px);
+    top: 14px;
+    left: 0;
+  }
+
+  .advantages__item--triangle-down::after {
+    display: none;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: row;
+  }
+
 }
