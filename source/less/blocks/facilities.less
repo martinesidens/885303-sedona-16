@@ -1,4 +1,5 @@
 .facilities {
+  .wrapper(0 20px);
   .block_type(@white-color; @black-color);
 }
 
@@ -12,13 +13,13 @@
 
 .facilities__title {
   position: relative;
-  .font_type(@bold-type);
+  .font_type("PT Sans Bold"; @bold-type);
   .text_type(18px; 24px; left; 35px; 15px);
   padding-left: 50px;
 }
 
 .facilities__description {
-  .font_type(@normal-type);
+  .font_type("PT Sans Normal"; @normal-type);
   .text_type(14px; 21px; left; 15px; 28px);
   padding-left: 50px;
 }
@@ -54,5 +55,73 @@
   .facilities__list {
     display: flex;
     width: @tablet-width;
+  }
+
+  .facilities__list-item {
+    min-width: 256px;
+  }
+
+  .facilities__title {
+    .margin-top-bot(160px; 20px);
+    padding: 0;
+    text-align: center;
+  }
+
+  .facilities__title--first::before {
+    content: "";
+    .size(75px; 75px);
+    position: absolute;
+    background: url(../../img/icon-house.svg) no-repeat;
+    left: 90px;
+    top: -110px;
+  }
+
+  .facilities__title--second::before {
+    content: "";
+    .size(75px; 75px);
+    position: absolute;
+    background: url(../../img/icon-gift.svg) no-repeat;
+    left: 90px;
+    top: -110px; 
+}
+
+.facilities__title--third::before {
+  content: "";
+  .size(75px; 75px);
+  position: absolute;
+  background: url(../../img/icon-burger.svg) no-repeat;
+  left: 90px;
+  top: -110px;
+}
+
+  .facilities__description {
+    .margin-top-bot(0; 62px);
+    padding: 0 47px;
+    text-align: center;
+  }
+
+  .facilities__list-item {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .facilities__description {
+    .margin-top-bot(0; 82px);
+  }
+
+  .facilities__title--first::before {
+    left: 163px;
+    top: -110px;
+  }
+
+  .facilities__title--second::before {
+    left: 163px;
+    top: -110px;
+  }
+
+  .facilities__title--third::before {
+    left: 163px;
+    top: -110px;
   }
 }

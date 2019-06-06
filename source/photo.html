@@ -12,11 +12,11 @@
         <div class="main-header__wrapper">
           <ul class="main-header__list">
             <li class="main-header__item">
-              <a class="main-header__link" href="index.html">Главная</a>
+              <a class="main-header__link" href="#">Главная</a>
               <button class="main-header__close" type="button"></button>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="#">Фото и видео</a>
+              <a class="main-header__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-header__item" >
               <a class="main-header__link" href="form.html">Форма вызова</a>
@@ -25,8 +25,8 @@
               <a class="main-header__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
-          <div class="main-header-logo">
-            <a href="#" class="main-header-logo__link">
+          <div class="main-header__logo">
+            <a href="#" class="main-header__logo-link">
               <img class="main-header__logo-img"  src="img/logo-sedona-mobile.svg" alt="Логотип">
             </a>
             <button class="main-header__toggle" type="button"></button>
@@ -34,24 +34,27 @@
         </div>
       </nav>
       <div class="main-header__img main-header__img--low">
-        <img class="main-header__text" src="img/text-sedona.svg" alt="Sedona">
+        <img class="main-header__text main-header__text--low" src="img/text-sedona.svg" alt="Sedona">
       </div>
     </header>
     <main>
-      <div class="wrapper">
+        
         <div class="motivation">
-          <h2 class="motivation__title">
+          <div class="motivation__wrapper">
+          <h2 class="motivation__title motivation__title--triangle">
             Фото и видео
           </h2>
           <p class="motivation__description">
             Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
           </p>
         </div>
+        </div>
       <section class="photo">
         <div class="photo__item">
           <a class="photo__link" href="#">
-            <img src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+            <img class="photo__img" src="img/photo-sunset-tablet@1x.jpg" alt="Неродные просторы">
           </a>
+          <div class="photo__wrapper">
           <p class="photo__name">
             Неродные просторы
           </p>
@@ -62,10 +65,12 @@
             1350
           </p>
         </div>
-        <div class="photo__item">
+        </div>
+        <div class="photo__item photo__item--low">
           <a class="photo__link" href="#">
-            <img src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+            <img class="photo__img" src="img/photo-cactus-tablet@1x.jpg" alt="Местная растительность">
           </a>
+          <div class="photo__wrapper--low">
           <p class="photo__name">
             Местная растительность
           </p>
@@ -75,11 +80,14 @@
           <p class="photo__counter">
             143
           </p>
+          </div>
         </div>
-        <div class="photo__item">
+        <div class="photo__item photo__item--low">
+          <div class="photo__wrapper--low">
           <a class="photo__link" href="#">
-            <img src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+            <img class="photo__img photo__img--low" src="img/photo-roads-tablet@1x.jpg" alt="Дорога на север">
           </a>
+          
           <p class="photo__name">
             Дорога на север
           </p>
@@ -90,19 +98,36 @@
             96
           </p>
         </div>
+        </div>
+        <div class="photo__item photo__item--low">
+          <a class="photo__link" href="#">
+            <img class="photo__img photo__img--low" src="img/photo-bridge-tablet@1x.jpg" alt="Мост дьявола">
+          </a>
+          <div class="photo__wrapper--low">
+          <p class="photo__name">
+            Мост дьявола
+          </p>
+          <p class="photo__author">
+            Автор фото: Антон
+          </p>
+          <p class="photo__counter">
+            254
+          </p>
+          </div>
+        </div>
       </section>
-        <div class="motivation">
-          <h2 class="motivation__title">
+        <div class="motivation motivation--border">
+          <h2 class="motivation__title motivation__title--reverse-top">
             Все ещё сомневаетесь?
           </h2>
-          <p class="motivation__description">
+          <p class="motivation__description motivation__description--reverse-bottom">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
         </div>
-      </div>
+      
         <div class="video">
           <video controls="controls">
-            <source src="img/video-mobile@1x.jpg" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="img/video-mobile.jpg" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
           </video>
         </div>
     </main>

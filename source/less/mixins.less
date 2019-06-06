@@ -1,12 +1,12 @@
-.wrapper { 
+.wrapper(@padding) { 
   width: 320px;
-  padding: 0 20px;
+  padding: @padding;
   margin: 0 auto;
-
+  
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-    padding: 0;
   }
+  
   @media (min-width: @desktop-width) {
     width: @desktop-width;
   }
@@ -19,8 +19,8 @@
   color: @color;
 }
   
-.font_type(@weight) {
-  font-family: "PTSans", "Arial", sans-serif;
+.font_type(@font-type; @weight) {
+  font-family: @font-type, "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: @weight;
 }
@@ -41,4 +41,9 @@
 .null-p-m {
   padding: 0;
   margin: 0;
+}
+
+.margin-top-bot(@margin-top; @margin-bot) {
+  margin-top: @margin-top;
+  margin-bottom: @margin-bot;
 }

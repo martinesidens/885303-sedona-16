@@ -1,9 +1,9 @@
 .footer {
-  width: 320px;
   background: #fefefe;
 }
 
 .footer__wrapper {
+  .wrapper(0 20px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 }
 
 .footer__hashtag {
-  .font_type(@bold-type);
+  .font_type("PT Sans Bold"; @bold-type);
   .text_type(21px; 26px; center; 35px; 35px);
 }
 
@@ -45,7 +45,7 @@
 }
 
 .footer__copyright {
-  .font_type(@normal-type);
+  .font_type("PT Sans Normal"; @normal-type);
   position: relative;
   text-decoration: none;
   margin-bottom: 28px;
@@ -63,4 +63,29 @@
 
 .footer__hashtag--photo {  
   margin-top: 74px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer__hashtag,
+  .footer__copyright {
+    .margin-top-bot(47px; 47px);
+  }
+
+  .footer__social-link {
+    .margin-top-bot(36px; 36px);
+  }
+
+  .footer__copyright::after {
+    content: "";
+    .size(28px; 36px);
+    position: absolute;
+    background: url(../../img/htmlacademy.svg) no-repeat;
+    left: 105px;
+    bottom: -5px;
+  }
 }

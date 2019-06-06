@@ -1,28 +1,77 @@
 .motivation {
+  .wrapper(0 60px);
   .block_type(@white-color; @black-color);
   border-bottom: #b2b2b2b2 solid 2px;
 }
 
+.motivation--border {
+  border: none;
+}
+
 .motivation__title {
-  .font_type(@bold-type);
-  .text_type(18px; 24px; center; 40px; 27px);
+  .font_type("PT Sans Bold"; @bold-type);
+  .text_type(18px; 24px; center; 38px; 27px);
   position: relative;
 }
 
 .motivation__description {
-  .font_type(@normal-type);
-  .text_type(14px; 21px; center; 15px; 28px);
+  .font_type("PT Sans Normal"; @normal-type);
+  .text_type(14px; 21px; center; 0; 28px);
 }
 
-.motivation__title::before {
+.motivation__title--reverse-top {
+  .margin-top-bot(31px; 27px);
+}
+
+.motivation__description--reverse-bottom {
+  .margin-top-bot(0; 36px);
+}
+
+.motivation__title--triangle::before {
   content: "";
-  .size(320px; 30px);
+  .size(323px; 27px);
   position: absolute;
   background: url(../../img/bg-intro-triangle-mobile.svg) no-repeat;
-  width: 320px;
-  height: 30px;
+  background-size: cover;
   margin-top: -70px;
-  z-index: 2;
-  left: -20px;
-  top: 4px;
+  left: -22px;
+  top: 7px;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__title--triangle::before {
+    content: "";
+    .size(768px; 57px);
+    position: absolute;
+    background: url(../../img/bg-intro-triangle-tablet.svg) no-repeat;
+    background-size: cover;
+    margin-top: -70px;
+    left: -177px;
+    top: -62px;
+  }
+
+  .motivation {
+    border: none;
+  }
+
+  .motivation__wrapper {
+    padding: 0 117px;
+  }
+
+  .motivation__title {
+    .margin-top-bot(75px; 30px);
+  }
+
+  .motivation__description {
+    .margin-top-bot(0; 70px);
+  }
+
+  .motivation__title--reverse-top {
+    .margin-top-bot(66px; 30px);
+  }
+
+  .motivation__description--reverse-bottom {
+    .margin-top-bot(0; 75px);
+  }
+
 }
